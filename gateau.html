@@ -1,0 +1,343 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>ガトー（焼き菓子）西洋菓子処シューマン</title>
+  <script type="text/javascript" src="../shared/js/footerFixed.js"></script>
+  <link href="../shared/css/import.css" rel="stylesheet" type="text/css" />
+
+  <script src="../shared/js/jquery-1.7.1.min.js"></script>
+  <script src="../shared/js/jquery.backstretch.min.js"></script>
+
+
+  <script type="text/javascript">
+    $(function () {
+      $("#mainslide").backstretch([
+        "../shared/images/index/slide/001.jpg",
+        "../shared/images/index/slide/002.jpg",
+        "../shared/images/index/slide/003.jpg",
+        "../shared/images/index/slide/004.jpg",
+        //"shared/images/index/slide/005.jpg",
+        //"shared/images/index/slide/006.jpg",
+      ], { duration: 3000, fade: 750 });
+    });
+  </script>
+
+  <script type="text/javascript">
+    function ChangeTab(tabname) {
+      // 全部消す
+      document.getElementById('tab1').style.display = 'none';
+      document.getElementById('tab2').style.display = 'none';
+      document.getElementById('tab3').style.display = 'none';
+      document.getElementById('tab4').style.display = 'none';
+      document.getElementById('tab5').style.display = 'none';
+      document.getElementById('tab7').style.display = 'none';
+      document.getElementById('tab8').style.display = 'none';
+      document.getElementById('tab9').style.display = 'none';
+      document.getElementById('tab10').style.display = 'none';
+      document.getElementById('tab11').style.display = 'none';
+      document.getElementById('tab12').style.display = 'none';
+      document.getElementById('tab13').style.display = 'none';
+      document.getElementById('tab14').style.display = 'none';
+      document.getElementById('tab15').style.display = 'none';
+      // 指定箇所のみ表示
+      document.getElementById(tabname).style.display = 'block';
+    }
+  </script>
+
+
+
+  <script>
+    $(function () {
+      $('a img').hover(function () {
+        $(this).attr('src', $(this).attr('src').replace('_off', '_on'));
+      }, function () {
+        if (!$(this).hasClass('currentPage')) {
+          $(this).attr('src', $(this).attr('src').replace('_on', '_off'));
+        }
+      });
+    });
+
+  </script>
+
+
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NST06K9XBG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-NST06K9XBG');
+</script>
+
+<body>
+
+  <!--<div id="wrapper">-->
+
+  <div id="header">
+  </div>
+  <header>
+    <h1><img src="wp-content/themes/chouman_news/shared/images/common/header/img_titlelogo.png" width="200"
+        height="55" /></h1>
+    <nav>
+      <!--<ul class="clearfix">
+                <li class="gnavi01"><a href="../index.php">トップページ</a></li>
+                <li class="gnavi02"><a href="../entremets/index.html">アントルメ(生菓子)</a></li>
+                <li class="gnavi03"><a href="../gateau/index.html">ガトー(焼き菓子)</a></li>
+                <li class="gnavi04_on"><a href="index.html">アクセス・店舗情報</a></li>
+              </ul>-->
+
+
+      <a href="http://www.chouman.jp/"><img src="../shared/images/common/header/gnavi01_off.png" alt="トップ" /></a>
+      <a href="http://www.chouman.jp/entremets/index.html"><img src="../shared/images/common/header/gnavi02_off.png"
+          alt="アントルメ" /></a>
+      <a href="http://www.chouman.jp/gateau/index.html"><img src="../shared/images/common/header/gnavi03_off.png"
+          alt="ガトー" /></a>
+      <a href="http://www.chouman.jp/baumkuchen/"><img src="../shared/images/common/header/gnavi04_off.png"
+          alt="バームクーヘン" /></a>
+      <a href="http://www.chouman.jp/recruit/"><img src="../shared/images/common/header/gnavi05_off.png"
+          alt="採用情報" /></a>
+      <a href="http://www.chouman.jp/access/index.html"><img src="../shared/images/common/header/gnavi06_off.png"
+          alt="アクセス・店舗情報" /></a>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <div id="wrap_contents">
+
+      <div id="local_contents01">
+
+        <h2><img src="images/h2_gateau.png" alt="ガトー(焼き菓子)" width="695" height="63" /></h2>
+
+        <div id="select_sweets">
+
+          <div class="tabbox">
+            <div id="tab1" class="tab">
+              <dl>
+                <dt><img src="images/gateau/img/img_001.jpg" alt="まっ黒チーズサンド" width="550" height="380" /></dt>
+                <dd class="itemname">まっ黒チーズサンド</dd>
+                <dd class="description">濃厚なベークドチーズをブラックココア風味のクッキーでサンドしました♪</dd>
+                <!-- <dd class="itemprice">定価：(単品)205円(税込)<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    ギフトセット(5個入り)1,155円(税込)、(10個入り)2,268円(税込)</dd>-->
+              </dl>
+            </div>
+            <div id="tab2" class="tab">
+              <dl>
+                <dt><img src="images/gateau/img/img_002.jpg" alt="リーフパイ" width="550" height="380" /></dt>
+                <dd class="itemname">リーフパイ</dd>
+                <dd class="description">シナモンシュガーをからめ、サクサクに焼き上げたパイです♪</dd>
+
+              </dl>
+            </div>
+            <div id="tab3" class="tab">
+              <dl>
+                <dt><img src="images/gateau/img/img_003.jpg" alt="生チョコサンド" width="550" height="380" /></dt>
+                <dd class="itemname">生チョコサンド</dd>
+                <dd class="description">当店自慢の生チョコをふんわりココアスポンジでサンドしました♪</dd>
+
+              </dl>
+            </div>
+            <div id="tab4" class="tab">
+              <dl>
+                <dt><img src="images/gateau/img/img_004.jpg" alt="高松ポテト" width="550" height="380" /></dt>
+                <dd class="itemname">高松ポテト</dd>
+                <dd class="description">良質なバターと生クリームで炊き上げたポテトをパイにのせて焼き上げました♪</dd>
+
+              </dl>
+            </div>
+            <div id="tab5" class="tab">
+              <dl>
+                <dt><img src="images/gateau/img/img_005.jpg" alt="しゅうまん" width="550" height="380" /></dt>
+                <dd class="itemname">しゅうまん</dd>
+                <dd class="description">しっとりスポンジをクルミ入りのシュー皮で巻き上げた当店おすすめのロールです♪<br />(バニラ・チョコ)</dd>
+
+              </dl>
+            </div>
+
+            <div id="tab7" class="tab">
+              <dl>
+                <dt><img src="images/gateau/img/img_007.jpg" alt="ガトー(焼き菓子)" width="550" height="380" /></dt>
+                <dd class="itemname">蔵王のチーズ</dd>
+                <dd class="description">蔵王産のチーズを使ってしっかりと焼き上げました♪</dd>
+
+              </dl>
+            </div>
+            <div id="tab8" class="tab">
+              <dl>
+                <dt><img src="images/gateau/img/img_008.jpg" alt="ガトー(焼き菓子)" width="550" height="380" /></dt>
+                <dd class="itemname">チョコ菓子各種</dd>
+                <dd class="description"></dd>
+
+              </dl>
+            </div>
+            <div id="tab9" class="tab">
+              <dl>
+                <dt><img src="images/gateau/img/img_009.jpg" alt="ガトー(焼き菓子)" width="550" height="380" /></dt>
+                <dd class="itemname">エチュード　プレリュード　ノックターン</dd>
+                <dd class="description"></dd>
+              </dl>
+            </div>
+
+
+            <div id="tab10" class="tab">
+              <dl>
+                <dt><img src="images/gateau/img/img_010.jpg" alt="ガトー(焼き菓子)" width="550" height="380" /></dt>
+                <dd class="itemname">やきいも</dd>
+                <dd class="description">季節限定のスイートポテトです。</dd>
+              </dl>
+            </div>
+
+
+            <div id="tab11" class="tab">
+              <dl>
+                <dt><img src="images/gateau/img/img_011.jpg" alt="ガトー(焼き菓子)" width="550" height="380" /></dt>
+                <dd class="itemname">ほろほろ</dd>
+                <dd class="description">和三盆・黒糖・抹茶</dd>
+              </dl>
+            </div>
+
+
+            <div id="tab12" class="tab">
+              <dl>
+                <dt><img src="images/gateau/img/img_012.jpg" alt="ガトー(焼き菓子)" width="550" height="380" /></dt>
+                <dd class="itemname">ほんわかマドレーヌ</dd>
+                <dd class="description">沖縄産のやさしい味わいのほんわか糖を使用して焼き上げました♪</dd>
+              </dl>
+            </div>
+
+
+            <div id="tab13" class="tab">
+              <dl>
+                <dt><img src="images/gateau/img/img_013.jpg" alt="ガトー(焼き菓子)" width="550" height="380" /></dt>
+                <dd class="itemname">珈琲ゼリー</dd>
+                <dd class="description"></dd>
+              </dl>
+            </div>
+
+
+
+            <div id="tab14" class="tab">
+              <dl>
+                <dt><img src="images/gateau/img/img_014.jpg" alt="ガトー(焼き菓子)" width="550" height="380" /></dt>
+                <dd class="itemname">キャラメルドーナルパイ</dd>
+                <dd class="description">バターたっぷりのキャラメルとサクサクパイのハーモニー</dd>
+              </dl>
+            </div>
+
+
+            <div id="tab15" class="tab">
+              <dl>
+                <dt><img src="images/gateau/img/img_015.jpg" alt="ガトー(焼き菓子)" width="550" height="380" /></dt>
+                <dd class="itemname">クッキー詰合せ・かご盛りギフト</dd>
+                <dd class="description"></dd>
+              </dl>
+            </div>
+
+
+
+
+          </div>
+
+          <div class="thumnail">
+            <ul class="tabs">
+              <li><a href="#tab1" class="tab1" onclick="ChangeTab('tab1'); return false;"><img
+                    src="images/gateau/thum/thum_001.jpg" alt="ガトー(焼き菓子)" width="100" height="100" /></a></li>
+              <li><a href="#tab2" class="tab2" onclick="ChangeTab('tab2'); return false;"><img
+                    src="images/gateau/thum/thum_002.jpg" alt="ガトー(焼き菓子)" width="100" height="100" /></a></li>
+              <li><a href="#tab3" class="tab3" onclick="ChangeTab('tab3'); return false;"><img
+                    src="images/gateau/thum/thum_003.jpg" alt="ガトー(焼き菓子)" width="100" height="100" /></a></li>
+            </ul>
+            <ul class="tabs">
+              <li><a href="#tab4" class="tab4" onclick="ChangeTab('tab4'); return false;"><img
+                    src="images/gateau/thum/thum_004.jpg" alt="ガトー(焼き菓子)" width="100" height="100" /></a></li>
+              <li><a href="#tab5" class="tab5" onclick="ChangeTab('tab5'); return false;"><img
+                    src="images/gateau/thum/thum_005.jpg" alt="ガトー(焼き菓子)" width="100" height="100" /></a></li>
+              <li><a href="#tab7" class="tab7" onclick="ChangeTab('tab7'); return false;"><img
+                    src="images/gateau/thum/thum_007.jpg" alt="ガトー(焼き菓子)" width="100" height="100" /></a></li>
+            </ul>
+            <ul class="tabs">
+
+              <li><a href="#tab8" class="tab8" onclick="ChangeTab('tab8'); return false;"><img
+                    src="images/gateau/thum/thum_008.jpg" alt="ガトー(焼き菓子)" width="100" height="100" /></a></li>
+              <li><a href="#tab9" class="tab9" onclick="ChangeTab('tab9'); return false;"><img
+                    src="images/gateau/thum/thum_009.jpg" alt="ガトー(焼き菓子)" width="100" height="100" /></a></li>
+              <li><a href="#tab10" class="tab10" onclick="ChangeTab('tab10'); return false;"><img
+                    src="images/gateau/thum/thum_010.jpg" alt="ガトー(焼き菓子)" width="100" height="100" /></a></li>
+            </ul>
+
+
+            <ul class="tabs">
+
+              <li><a href="#tab11" class="tab11" onclick="ChangeTab('tab11'); return false;"><img
+                    src="images/gateau/thum/thum_011.jpg" alt="ガトー(焼き菓子)" width="100" height="100" /></a></li>
+              <li><a href="#tab12" class="tab12" onclick="ChangeTab('tab12'); return false;"><img
+                    src="images/gateau/thum/thum_012.jpg" alt="ガトー(焼き菓子)" width="100" height="100" /></a></li>
+              <li><a href="#tab13" class="tab13" onclick="ChangeTab('tab13'); return false;"><img
+                    src="images/gateau/thum/thum_013.jpg" alt="ガトー(焼き菓子)" width="100" height="100" /></a></li>
+            </ul>
+
+
+            <ul class="tabs">
+
+              <li><a href="#tab14" class="tab14" onclick="ChangeTab('tab14'); return false;"><img
+                    src="images/gateau/thum/thum_014.jpg" alt="ガトー(焼き菓子)" width="100" height="100" /></a></li>
+              <li><a href="#tab15" class="tab15" onclick="ChangeTab('tab15'); return false;"><img
+                    src="images/gateau/thum/thum_015.jpg" alt="ガトー(焼き菓子)" width="100" height="100" /></a></li>
+            </ul>
+
+          </div>
+        </div>
+
+
+        <script type="text/javascript">
+          ChangeTab('tab1');
+        </script>
+
+
+
+
+
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <p class="logo"><img src="wp-content/themes/chouman_news/shared/images/common/footer/footer_logo.png" width="170"
+        height="53" /></p>
+    <div class="footer_info">
+      <p>〒422-8034　静岡市駿河区高松２丁目８-２７</p>
+      <p>営業時間：10:00～18:30　定 休 日：火曜日</p>
+      <p class="maillink"><a href="http://www.chouman.jp/mail/">メールに関する大切なお知らせ<br />(イラストデコレーション・クッキー データ送信専用)</a>
+      </p>
+    </div>
+    <p class="tel"><img src="wp-content/themes/chouman_news/shared/images/common/footer/footer_tel.png" width="230"
+        height="53" /></p>
+    <p class="copyright">Copyright(C) chouman, All Rights Reserved.</p>
+    <p class="footer_img"><img src="wp-content/themes/chouman_news/shared/images/common/footer/img_footer.jpg"
+        width="106" height="97" /></p>
+  </footer>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-70126892-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+</body>
+
+</html>

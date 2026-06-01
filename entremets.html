@@ -1,0 +1,444 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>アントルメ（生菓子）西洋菓子処シューマン</title>
+  <script type="text/javascript" src="../shared/js/footerFixed.js"></script>
+  <link href="../shared/css/import.css" rel="stylesheet" type="text/css" />
+
+  <script src="../shared/js/jquery-1.7.1.min.js"></script>
+  <script src="../shared/js/jquery.backstretch.min.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      $("#mainslide").backstretch(
+        [
+          "../shared/images/index/slide/001.jpg",
+          "../shared/images/index/slide/002.jpg",
+          "../shared/images/index/slide/003.jpg",
+          "../shared/images/index/slide/004.jpg",
+          //"shared/images/index/slide/005.jpg",
+          //"shared/images/index/slide/006.jpg",
+        ],
+        { duration: 3000, fade: 750 }
+      );
+    });
+  </script>
+
+  <script type="text/javascript">
+
+    function ChangeTab(tabname) {
+      // 全部消す
+      document.getElementById("tab1").style.display = "none";
+      document.getElementById("tab2").style.display = "none";
+      document.getElementById("tab3").style.display = "none";
+      document.getElementById("tab4").style.display = "none";
+      document.getElementById("tab5").style.display = "none";
+      document.getElementById("tab6").style.display = "none";
+      document.getElementById("tab7").style.display = "none";
+      document.getElementById("tab8").style.display = "none";
+      document.getElementById("tab9").style.display = "none";
+      document.getElementById("tab10").style.display = "none";
+      document.getElementById("tab11").style.display = "none";
+      document.getElementById("tab12").style.display = "none";
+      document.getElementById("tab13").style.display = "none";
+      document.getElementById("tab14").style.display = "none";
+      document.getElementById("tab15").style.display = "none";
+      // 指定箇所のみ表示
+      document.getElementById(tabname).style.display = "block";
+    }
+  </script>
+
+  <script>
+    $(function () {
+      $("a img").hover(
+        function () {
+          $(this).attr("src", $(this).attr("src").replace("_off", "_on"));
+        },
+        function () {
+          if (!$(this).hasClass("currentPage")) {
+            $(this).attr("src", $(this).attr("src").replace("_on", "_off"));
+          }
+        }
+      );
+    });
+  </script>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NST06K9XBG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+
+  gtag("config", "G-NST06K9XBG");
+</script>
+
+<body>
+  <!--<div id="wrapper">-->
+
+  <div id="header">
+  </div>
+  <header>
+    <h1><img src="wp-content/themes/chouman_news/shared/images/common/header/img_titlelogo.png" width="200"
+        height="55" /></h1>
+    <nav>
+      <!--<ul class="clearfix">
+                <li class="gnavi01"><a href="../index.php">トップページ</a></li>
+                <li class="gnavi02"><a href="../entremets/index.html">アントルメ(生菓子)</a></li>
+                <li class="gnavi03"><a href="../gateau/index.html">ガトー(焼き菓子)</a></li>
+                <li class="gnavi04_on"><a href="index.html">アクセス・店舗情報</a></li>
+              </ul>-->
+
+
+      <a href="http://www.chouman.jp/"><img src="../shared/images/common/header/gnavi01_off.png" alt="トップ" /></a>
+      <a href="http://www.chouman.jp/entremets/index.html"><img src="../shared/images/common/header/gnavi02_off.png"
+          alt="アントルメ" /></a>
+      <a href="http://www.chouman.jp/gateau/index.html"><img src="../shared/images/common/header/gnavi03_off.png"
+          alt="ガトー" /></a>
+      <a href="http://www.chouman.jp/baumkuchen/"><img src="../shared/images/common/header/gnavi04_off.png"
+          alt="バームクーヘン" /></a>
+      <a href="http://www.chouman.jp/recruit/"><img src="../shared/images/common/header/gnavi05_off.png"
+          alt="採用情報" /></a>
+      <a href="http://www.chouman.jp/access/index.html"><img src="../shared/images/common/header/gnavi06_off.png"
+          alt="アクセス・店舗情報" /></a>
+    </nav>
+  </header>
+
+  <main>
+    <div id="wrap_contents">
+      <div id="local_contents_deco">
+        <h2>
+          <img src="images/h2_entremets.png" alt="アントルメ(生菓子)" width="695" height="63" />
+        </h2>
+
+        <div id="select_sweets">
+          <div class="tabbox">
+            <div id="tab1" class="tab">
+              <dl>
+                <dt>
+                  <img src="images/entremets/img/img_010.jpg" alt="生クリーム4号" width="550" height="380" />
+                </dt>
+                <dd class="itemname">桃のタルト(季節限定)</dd>
+                <dd class="description"></dd>
+              </dl>
+            </div>
+
+            <div id="tab2" class="tab">
+              <dl>
+                <dt>
+                  <img src="images/entremets/img/img_002.jpg" alt="プチシュー山盛り" width="550" height="380" />
+                </dt>
+                <dd class="itemname">プチシュー山盛り</dd>
+                <dd class="description">
+                  カスタードいっぱいのタルトにシューとフルーツを盛り付けました♪
+                </dd>
+              </dl>
+            </div>
+
+            <div id="tab3" class="tab">
+              <dl>
+                <dt>
+                  <img src="images/entremets/img/img_003.jpg" alt="クレープのデコ" width="550" height="380" />
+                </dt>
+                <dd class="itemname">クレープのデコ</dd>
+                <dd class="description">
+                  フルーツサンドのデコレーションをクレープで包みました♪
+                </dd>
+              </dl>
+            </div>
+
+            <div id="tab4" class="tab">
+              <dl>
+                <dt>
+                  <img src="images/entremets/img/img_004.jpg" alt="大きな石畳" width="550" height="380" />
+                </dt>
+                <dd class="itemname">大きな石畳</dd>
+                <dd class="description">
+                  エスプレッソのスポンジとバニラとチョコの三重奏♪
+                </dd>
+              </dl>
+            </div>
+
+            <div id="tab5" class="tab">
+              <dl>
+                <dt>
+                  <img src="images/entremets/img/img_005.jpg" alt="メロディ" width="550" height="380" />
+                </dt>
+                <dd class="itemname">生デコ5号フルーツ盛り</dd>
+                <dd class="description">
+                  フルーツを盛り込んだデコレーションです♪
+                </dd>
+              </dl>
+            </div>
+
+            <div id="tab6" class="tab">
+              <dl>
+                <dt>
+                  <img src="images/entremets/img/img_006.jpg" alt="季節のロール" width="550" height="380" />
+                </dt>
+                <dd class="itemname">バニラロール</dd>
+                <dd class="description">
+                  旬のフルーツとふわふわスポンジのロールケーキです♪
+                </dd>
+              </dl>
+            </div>
+
+            <div id="tab7" class="tab">
+              <dl>
+                <dt>
+                  <img src="images/entremets/img/img_007.jpg" alt="チョコデコ5号" width="550" height="380" />
+                </dt>
+                <dd class="itemname">チョコデコ5号</dd>
+                <dd class="description">
+                  チョコレートクリームにバナナをサンドしたデコレーションです♪
+                </dd>
+              </dl>
+            </div>
+
+            <div id="tab8" class="tab">
+              <dl>
+                <dt>
+                  <img src="images/entremets/img/img_008.jpg" alt="グリオット" width="550" height="380" />
+                </dt>
+                <dd class="itemname">グリオット</dd>
+                <dd class="description">
+                  グリオットチェリーの香りとやさしいミルクチョコのハーモニー♪
+                </dd>
+              </dl>
+            </div>
+
+            <div id="tab9" class="tab">
+              <dl>
+                <dt>
+                  <img src="images/entremets/img/img_009.jpg" alt="プリンセス" width="550" height="380" />
+                </dt>
+                <dd class="itemname">プリンセス</dd>
+                <dd class="description">
+                  カシスと苺を使った甘酸っぱいベリームースです♪
+                </dd>
+              </dl>
+            </div>
+
+            <div id="tab10" class="tab">
+              <dl>
+                <dt>
+                  <img src="images/entremets/img/img_010.jpg" alt="桃のタルト(季節限定)" width="550" height="380" />
+                </dt>
+                <dd class="itemname">桃のタルト(季節限定)</dd>
+                <dd class="description"></dd>
+              </dl>
+            </div>
+
+            <div id="tab11" class="tab">
+              <dl>
+                <dt>
+                  <img src="images/entremets/img/img_011.jpg" alt="母の日のケーキ" width="550" height="380" />
+                </dt>
+                <dd class="itemname">母の日のケーキ</dd>
+                <dd class="description">
+                  カシスといちごの2層ムースのケーキです。
+                </dd>
+              </dl>
+            </div>
+
+            <div id="tab12" class="tab">
+              <dl>
+                <dt>
+                  <img src="images/entremets/img/img_012.jpg" alt="キャラメルロール" width="550" height="380" />
+                </dt>
+                <dd class="itemname">キャラメルロール</dd>
+                <dd class="description">
+                  キャラメルソースをぜいたくに使ったロールケーキです。
+                </dd>
+              </dl>
+            </div>
+
+            <div id="tab13" class="tab">
+              <dl>
+                <dt>
+                  <img src="images/entremets/img/img_013.jpg" alt="マロンバーム" width="550" height="380" />
+                </dt>
+                <dd class="itemname">マロンバーム</dd>
+                <dd class="description">
+                  ハードバームを使ったモンブランです。
+                </dd>
+              </dl>
+            </div>
+
+            <div id="tab14" class="tab">
+              <dl>
+                <dt>
+                  <img src="images/entremets/img/img_014.jpg" alt="バースデーケーキ" width="550" height="380" />
+                </dt>
+                <dd class="itemname">バースデーケーキ</dd>
+                <dd class="description"></dd>
+              </dl>
+            </div>
+
+            <div id="tab15" class="tab">
+              <dl>
+                <dt>
+                  <img src="images/entremets/img/img_015.jpg" alt="ガナッシュバーム" width="550" height="380" />
+                </dt>
+                <dd class="itemname">ガナッシュバーム</dd>
+                <dd class="description">
+                  チョコバームにガナッシュをコーティング。
+                </dd>
+              </dl>
+            </div>
+          </div>
+
+          <div class="thumnail">
+            <ul class="tabs">
+              <!-- <li><a href="#tab1" class="tab1" onclick="ChangeTab('tab1'); return false;"><img src="images/entremets/thum/thum_001.jpg" alt="アントルメ(生菓子)" width="100" height="100" /></a></li>
+            <li><a href="#tab2" class="tab2" onclick="ChangeTab('tab2'); return false;"><img src="images/entremets/thum/thum_002.jpg" alt="アントルメ(生菓子)" width="100" height="100" /></a></li>
+            <li><a href="#tab3" class="tab3" onclick="ChangeTab('tab3'); return false;"><img src="images/entremets/thum/thum_003.jpg" alt="アントルメ(生菓子)" width="100" height="100" /></a></li> -->
+            </ul>
+            <ul class="tabs">
+              <!-- <li>
+              <a
+              href="#tab4"
+              class="tab4"
+              onclick="ChangeTab('tab4'); return false;"
+              ><img
+              src="images/entremets/thum/thum_004.jpg"
+              alt="アントルメ(生菓子)"
+              width="100"
+              height="100"
+              /></a>
+            </li> -->
+
+              <li>
+                <a href="#ta10" class="tab10" onclick="ChangeTab('tab10'); return false;"><img
+                    src="images/entremets/thum/thum_010.jpg" alt="アントルメ(生菓子)" width="100" height="100" /></a>
+              </li>
+
+              <li>
+                <a href="#tab5" class="tab5" onclick="ChangeTab('tab5'); return false;"><img
+                    src="images/entremets/thum/thum_005.jpg" alt="アントルメ(生菓子)" width="100" height="100" /></a>
+              </li>
+              <li>
+                <a href="#tab6" class="tab6" onclick="ChangeTab('tab6'); return false;"><img
+                    src="images/entremets/thum/thum_006.jpg" alt="アントルメ(生菓子)" width="100" height="100" /></a>
+              </li>
+            </ul>
+            <ul class="tabs">
+              <!-- <li>
+                <a
+                href="#tab7"
+                class="tab7"
+                onclick="ChangeTab('tab7'); return false;"
+                ><img
+                src="images/entremets/thum/thum_007.jpg"
+                alt="アントルメ(生菓子)"
+                width="100"
+                height="100"
+                /></a>
+              </li> -->
+              <li>
+                <a href="#tab8" class="tab8" onclick="ChangeTab('tab8'); return false;"><img
+                    src="images/entremets/thum/thum_008.jpg" alt="アントルメ(生菓子)" width="100" height="100" /></a>
+              </li>
+              <li>
+                <a href="#tab9" class="tab9" onclick="ChangeTab('tab9'); return false;"><img
+                    src="images/entremets/thum/thum_009.jpg" alt="アントルメ(生菓子)" width="100" height="100" /></a>
+              </li>
+              <li>
+                <a href="#tab11" class="tab11" onclick="ChangeTab('tab11'); return false;"><img
+                    src="images/entremets/thum/thum_011.jpg" alt="アントルメ(生菓子)" width="100" height="100" /></a>
+              </li>
+            </ul>
+
+            <ul class="tabs">
+              <li>
+                <a href="#tab12" class="tab12" onclick="ChangeTab('tab12'); return false;"><img
+                    src="images/entremets/thum/thum_012.jpg" alt="アントルメ(生菓子)" width="100" height="100" /></a>
+              </li>
+              <li>
+                <a href="#tab13" class="tab13" onclick="ChangeTab('tab13'); return false;"><img
+                    src="images/entremets/thum/thum_013.jpg" alt="アントルメ(生菓子)" width="100" height="100" /></a>
+              </li>
+
+              <li>
+                <a href="#tab15" class="tab15" onclick="ChangeTab('tab15'); return false;"><img
+                    src="images/entremets/thum/thum_015.jpg" alt="アントルメ(生菓子)" width="100" height="100" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <script type="text/javascript">
+
+          // デフォルトのタブを選択
+          ChangeTab("tab1");
+
+        </script>
+
+        <h2>
+          <img src="images/h2_deco.png" alt="デコレーション" width="695" height="63" />
+        </h2>
+
+        <p class="deco">
+          <a href="images/img_deco03.jpg" target="_blank"><img src="images/img_deco03.jpg" width="900px" height="auto"
+              alt="デコレーションケーキ" />
+          </a>
+        </p>
+
+        <p class="decobtn">
+          <a href="images/decorationol02.pdf" target="_blank"><img src="images/btn_deco.jpg" width="350px" height="auto"
+              alt="デコレーションケーキ" />
+          </a>
+        </p>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <p class="logo"><img src="wp-content/themes/chouman_news/shared/images/common/footer/footer_logo.png" width="170"
+        height="53" /></p>
+    <div class="footer_info">
+      <p>〒422-8034　静岡市駿河区高松２丁目８-２７</p>
+      <p>営業時間：10:00～18:30　定 休 日：火曜日</p>
+      <p class="maillink"><a href="http://www.chouman.jp/mail/">メールに関する大切なお知らせ<br />(イラストデコレーション・クッキー データ送信専用)</a>
+      </p>
+    </div>
+    <p class="tel"><img src="wp-content/themes/chouman_news/shared/images/common/footer/footer_tel.png" width="230"
+        height="53" /></p>
+    <p class="copyright">Copyright(C) chouman, All Rights Reserved.</p>
+    <p class="footer_img"><img src="wp-content/themes/chouman_news/shared/images/common/footer/img_footer.jpg"
+        width="106" height="97" /></p>
+  </footer>
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i["GoogleAnalyticsObject"] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      "script",
+      "//www.google-analytics.com/analytics.js",
+      "ga"
+    );
+
+    ga("create", "UA-70126892-1", "auto");
+    ga("send", "pageview");
+  </script>
+</body>
+
+</html>
