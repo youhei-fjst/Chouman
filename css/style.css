@@ -5,16 +5,6 @@ header {
   display: flex;
 }
 
-#slider {
-
-  img {
-    max-width: 1186px;
-    width: 100%;
-    height: auto;
-  }
-
-}
-
 
 
 footer {
