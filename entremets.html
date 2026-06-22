@@ -16,61 +16,10 @@
 
   <script src="js/jquery-1.7.1.min.js"></script>
   <script src="js/jquery.backstretch.min.js"></script>
+  <script src="js/select.js"></script>
+  <script src="js/changetab.js"></script>
+  <script src="js/currentpage.js"></script>
 
-  <script type="text/javascript">
-    $(function () {
-      $("#mainslide").backstretch(
-        [
-          "../shared/images/index/slide/001.jpg",
-          "../shared/images/index/slide/002.jpg",
-          "../shared/images/index/slide/003.jpg",
-          "../shared/images/index/slide/004.jpg",
-          //"shared/images/index/slide/005.jpg",
-          //"shared/images/index/slide/006.jpg",
-        ],
-        { duration: 3000, fade: 750 }
-      );
-    });
-  </script>
-
-  <script type="text/javascript">
-
-    function ChangeTab(tabname) {
-      // 全部消す
-      document.getElementById("tab1").style.display = "none";
-      document.getElementById("tab2").style.display = "none";
-      document.getElementById("tab3").style.display = "none";
-      document.getElementById("tab4").style.display = "none";
-      document.getElementById("tab5").style.display = "none";
-      document.getElementById("tab6").style.display = "none";
-      document.getElementById("tab7").style.display = "none";
-      document.getElementById("tab8").style.display = "none";
-      document.getElementById("tab9").style.display = "none";
-      document.getElementById("tab10").style.display = "none";
-      document.getElementById("tab11").style.display = "none";
-      document.getElementById("tab12").style.display = "none";
-      document.getElementById("tab13").style.display = "none";
-      document.getElementById("tab14").style.display = "none";
-      document.getElementById("tab15").style.display = "none";
-      // 指定箇所のみ表示
-      document.getElementById(tabname).style.display = "block";
-    }
-  </script>
-
-  <script>
-    $(function () {
-      $("a img").hover(
-        function () {
-          $(this).attr("src", $(this).attr("src").replace("_off", "_on"));
-        },
-        function () {
-          if (!$(this).hasClass("currentPage")) {
-            $(this).attr("src", $(this).attr("src").replace("_on", "_off"));
-          }
-        }
-      );
-    });
-  </script>
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -106,8 +55,8 @@
         </h2>
 
         <div id="select_sweets">
-          <div class="tabbox">
-            <div id="tab1" class="tab">
+          <ul class="tabbox">
+            <li id="tab1" class="tab">
               <dl>
                 <dt>
                   <img src="entremets/img_010.jpg" alt="生クリーム4号" width="550" height="380" />
@@ -115,9 +64,9 @@
                 <dd class="itemname">桃のタルト(季節限定)</dd>
                 <dd class="description"></dd>
               </dl>
-            </div>
+            </li>
 
-            <div id="tab2" class="tab">
+            <li id="tab2" class="tab">
               <dl>
                 <dt>
                   <img src="entremets/img_002.jpg" alt="プチシュー山盛り" width="550" height="380" />
@@ -127,9 +76,9 @@
                   カスタードいっぱいのタルトにシューとフルーツを盛り付けました♪
                 </dd>
               </dl>
-            </div>
+            </li>
 
-            <div id="tab3" class="tab">
+            <li id="tab3" class="tab">
               <dl>
                 <dt>
                   <img src="entremets/img_003.jpg" alt="クレープのデコ" width="550" height="380" />
@@ -139,9 +88,9 @@
                   フルーツサンドのデコレーションをクレープで包みました♪
                 </dd>
               </dl>
-            </div>
+            </li>
 
-            <div id="tab4" class="tab">
+            <li id="tab4" class="tab">
               <dl>
                 <dt>
                   <img src="entremets/img_004.jpg" alt="大きな石畳" width="550" height="380" />
@@ -151,9 +100,9 @@
                   エスプレッソのスポンジとバニラとチョコの三重奏♪
                 </dd>
               </dl>
-            </div>
+            </li>
 
-            <div id="tab5" class="tab">
+            <li id="tab5" class="tab">
               <dl>
                 <dt>
                   <img src="entremets/img_005.jpg" alt="メロディ" width="550" height="380" />
@@ -163,9 +112,9 @@
                   フルーツを盛り込んだデコレーションです♪
                 </dd>
               </dl>
-            </div>
+            </li>
 
-            <div id="tab6" class="tab">
+            <li id="tab6" class="tab">
               <dl>
                 <dt>
                   <img src="entremets/img_006.jpg" alt="季節のロール" width="550" height="380" />
@@ -175,9 +124,9 @@
                   旬のフルーツとふわふわスポンジのロールケーキです♪
                 </dd>
               </dl>
-            </div>
+            </li>
 
-            <div id="tab7" class="tab">
+            <li id="tab7" class="tab">
               <dl>
                 <dt>
                   <img src="entremets/img_007.jpg" alt="チョコデコ5号" width="550" height="380" />
@@ -187,9 +136,9 @@
                   チョコレートクリームにバナナをサンドしたデコレーションです♪
                 </dd>
               </dl>
-            </div>
+            </li>
 
-            <div id="tab8" class="tab">
+            <li id="tab8" class="tab">
               <dl>
                 <dt>
                   <img src="entremets/img_008.jpg" alt="グリオット" width="550" height="380" />
@@ -199,9 +148,9 @@
                   グリオットチェリーの香りとやさしいミルクチョコのハーモニー♪
                 </dd>
               </dl>
-            </div>
+            </li>
 
-            <div id="tab9" class="tab">
+            <li id="tab9" class="tab">
               <dl>
                 <dt>
                   <img src="entremets/img_009.jpg" alt="プリンセス" width="550" height="380" />
@@ -211,9 +160,9 @@
                   カシスと苺を使った甘酸っぱいベリームースです♪
                 </dd>
               </dl>
-            </div>
+            </li>
 
-            <div id="tab10" class="tab">
+            <li id="tab10" class="tab">
               <dl>
                 <dt>
                   <img src="entremets/img_010.jpg" alt="桃のタルト(季節限定)" width="550" height="380" />
@@ -221,9 +170,9 @@
                 <dd class="itemname">桃のタルト(季節限定)</dd>
                 <dd class="description"></dd>
               </dl>
-            </div>
+            </li>
 
-            <div id="tab11" class="tab">
+            <li id="tab11" class="tab">
               <dl>
                 <dt>
                   <img src="entremets/img_011.jpg" alt="母の日のケーキ" width="550" height="380" />
@@ -233,9 +182,9 @@
                   カシスといちごの2層ムースのケーキです。
                 </dd>
               </dl>
-            </div>
+            </li>
 
-            <div id="tab12" class="tab">
+            <li id="tab12" class="tab">
               <dl>
                 <dt>
                   <img src="entremets/img_012.jpg" alt="キャラメルロール" width="550" height="380" />
@@ -245,9 +194,9 @@
                   キャラメルソースをぜいたくに使ったロールケーキです。
                 </dd>
               </dl>
-            </div>
+            </li>
 
-            <div id="tab13" class="tab">
+            <li id="tab13" class="tab">
               <dl>
                 <dt>
                   <img src="entremets/img_013.jpg" alt="マロンバーム" width="550" height="380" />
@@ -257,9 +206,9 @@
                   ハードバームを使ったモンブランです。
                 </dd>
               </dl>
-            </div>
+            </li>
 
-            <div id="tab14" class="tab">
+            <li id="tab14" class="tab">
               <dl>
                 <dt>
                   <img src="entremets/img_014.jpg" alt="バースデーケーキ" width="550" height="380" />
@@ -267,9 +216,9 @@
                 <dd class="itemname">バースデーケーキ</dd>
                 <dd class="description"></dd>
               </dl>
-            </div>
+            </li>
 
-            <div id="tab15" class="tab">
+            <li id="tab15" class="tab">
               <dl>
                 <dt>
                   <img src="entremets/img_015.jpg" alt="ガナッシュバーム" width="550" height="380" />
@@ -279,8 +228,8 @@
                   チョコバームにガナッシュをコーティング。
                 </dd>
               </dl>
-            </div>
-          </div>
+            </li>
+          </ul>
 
           <div class="thumnail">
             <ul class="tabs">

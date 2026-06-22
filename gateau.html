@@ -16,57 +16,10 @@
 
   <script src="js/jquery-1.7.1.min.js"></script>
   <script src="js/jquery.backstretch.min.js"></script>
+  <script src="js/select.js"></script>
+  <script src="js/changetab.js"></script>
+  <script src="js/currentpage.js"></script>
 
-
-  <script type="text/javascript">
-    $(function () {
-      $("#mainslide").backstretch([
-        "../shared/images/index/slide/001.jpg",
-        "../shared/images/index/slide/002.jpg",
-        "../shared/images/index/slide/003.jpg",
-        "../shared/images/index/slide/004.jpg",
-        //"shared/images/index/slide/005.jpg",
-        //"shared/images/index/slide/006.jpg",
-      ], { duration: 3000, fade: 750 });
-    });
-  </script>
-
-  <script type="text/javascript">
-    function ChangeTab(tabname) {
-      // 全部消す
-      document.getElementById('tab1').style.display = 'none';
-      document.getElementById('tab2').style.display = 'none';
-      document.getElementById('tab3').style.display = 'none';
-      document.getElementById('tab4').style.display = 'none';
-      document.getElementById('tab5').style.display = 'none';
-      document.getElementById('tab7').style.display = 'none';
-      document.getElementById('tab8').style.display = 'none';
-      document.getElementById('tab9').style.display = 'none';
-      document.getElementById('tab10').style.display = 'none';
-      document.getElementById('tab11').style.display = 'none';
-      document.getElementById('tab12').style.display = 'none';
-      document.getElementById('tab13').style.display = 'none';
-      document.getElementById('tab14').style.display = 'none';
-      document.getElementById('tab15').style.display = 'none';
-      // 指定箇所のみ表示
-      document.getElementById(tabname).style.display = 'block';
-    }
-  </script>
-
-
-
-  <script>
-    $(function () {
-      $('a img').hover(function () {
-        $(this).attr('src', $(this).attr('src').replace('_off', '_on'));
-      }, function () {
-        if (!$(this).hasClass('currentPage')) {
-          $(this).attr('src', $(this).attr('src').replace('_on', '_off'));
-        }
-      });
-    });
-
-  </script>
 
 
 </head>
@@ -105,8 +58,8 @@
 
         <div id="select_sweets">
 
-          <div class="tabbox">
-            <div id="tab1" class="tab">
+          <ul class="tabbox">
+            <li id="tab1" class="tab">
               <dl>
                 <dt><img src="images/gateau/img/img_001.jpg" alt="まっ黒チーズサンド" width="550" height="380" /></dt>
                 <dd class="itemname">まっ黒チーズサンド</dd>
@@ -115,123 +68,123 @@
                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     ギフトセット(5個入り)1,155円(税込)、(10個入り)2,268円(税込)</dd>-->
               </dl>
-            </div>
-            <div id="tab2" class="tab">
+            </li>
+            <li id="tab2" class="tab">
               <dl>
                 <dt><img src="images/gateau/img/img_002.jpg" alt="リーフパイ" width="550" height="380" /></dt>
                 <dd class="itemname">リーフパイ</dd>
                 <dd class="description">シナモンシュガーをからめ、サクサクに焼き上げたパイです♪</dd>
 
               </dl>
-            </div>
-            <div id="tab3" class="tab">
+            </li>
+            <li id="tab3" class="tab">
               <dl>
                 <dt><img src="images/gateau/img/img_003.jpg" alt="生チョコサンド" width="550" height="380" /></dt>
                 <dd class="itemname">生チョコサンド</dd>
                 <dd class="description">当店自慢の生チョコをふんわりココアスポンジでサンドしました♪</dd>
 
               </dl>
-            </div>
-            <div id="tab4" class="tab">
+            </li>
+            <li id="tab4" class="tab">
               <dl>
                 <dt><img src="images/gateau/img/img_004.jpg" alt="高松ポテト" width="550" height="380" /></dt>
                 <dd class="itemname">高松ポテト</dd>
                 <dd class="description">良質なバターと生クリームで炊き上げたポテトをパイにのせて焼き上げました♪</dd>
 
               </dl>
-            </div>
-            <div id="tab5" class="tab">
+            </li>
+            <li id="tab5" class="tab">
               <dl>
                 <dt><img src="images/gateau/img/img_005.jpg" alt="しゅうまん" width="550" height="380" /></dt>
                 <dd class="itemname">しゅうまん</dd>
                 <dd class="description">しっとりスポンジをクルミ入りのシュー皮で巻き上げた当店おすすめのロールです♪<br />(バニラ・チョコ)</dd>
 
               </dl>
-            </div>
+            </li>
 
-            <div id="tab7" class="tab">
+            <li id="tab7" class="tab">
               <dl>
                 <dt><img src="images/gateau/img/img_007.jpg" alt="ガトー(焼き菓子)" width="550" height="380" /></dt>
                 <dd class="itemname">蔵王のチーズ</dd>
                 <dd class="description">蔵王産のチーズを使ってしっかりと焼き上げました♪</dd>
 
               </dl>
-            </div>
-            <div id="tab8" class="tab">
+            </li>
+            <li id="tab8" class="tab">
               <dl>
                 <dt><img src="images/gateau/img/img_008.jpg" alt="ガトー(焼き菓子)" width="550" height="380" /></dt>
                 <dd class="itemname">チョコ菓子各種</dd>
                 <dd class="description"></dd>
 
               </dl>
-            </div>
-            <div id="tab9" class="tab">
+            </li>
+            <li id="tab9" class="tab">
               <dl>
                 <dt><img src="images/gateau/img/img_009.jpg" alt="ガトー(焼き菓子)" width="550" height="380" /></dt>
                 <dd class="itemname">エチュード　プレリュード　ノックターン</dd>
                 <dd class="description"></dd>
               </dl>
-            </div>
+            </li>
 
 
-            <div id="tab10" class="tab">
+            <li id="tab10" class="tab">
               <dl>
                 <dt><img src="images/gateau/img/img_010.jpg" alt="ガトー(焼き菓子)" width="550" height="380" /></dt>
                 <dd class="itemname">やきいも</dd>
                 <dd class="description">季節限定のスイートポテトです。</dd>
               </dl>
-            </div>
+            </li>
 
 
-            <div id="tab11" class="tab">
+            <li id="tab11" class="tab">
               <dl>
                 <dt><img src="images/gateau/img/img_011.jpg" alt="ガトー(焼き菓子)" width="550" height="380" /></dt>
                 <dd class="itemname">ほろほろ</dd>
                 <dd class="description">和三盆・黒糖・抹茶</dd>
               </dl>
-            </div>
+            </li>
 
 
-            <div id="tab12" class="tab">
+            <li id="tab12" class="tab">
               <dl>
                 <dt><img src="images/gateau/img/img_012.jpg" alt="ガトー(焼き菓子)" width="550" height="380" /></dt>
                 <dd class="itemname">ほんわかマドレーヌ</dd>
                 <dd class="description">沖縄産のやさしい味わいのほんわか糖を使用して焼き上げました♪</dd>
               </dl>
-            </div>
+            </li>
 
 
-            <div id="tab13" class="tab">
+            <li id="tab13" class="tab">
               <dl>
                 <dt><img src="images/gateau/img/img_013.jpg" alt="ガトー(焼き菓子)" width="550" height="380" /></dt>
                 <dd class="itemname">珈琲ゼリー</dd>
                 <dd class="description"></dd>
               </dl>
-            </div>
+            </li>
 
 
 
-            <div id="tab14" class="tab">
+            <li id="tab14" class="tab">
               <dl>
                 <dt><img src="images/gateau/img/img_014.jpg" alt="ガトー(焼き菓子)" width="550" height="380" /></dt>
                 <dd class="itemname">キャラメルドーナルパイ</dd>
                 <dd class="description">バターたっぷりのキャラメルとサクサクパイのハーモニー</dd>
               </dl>
-            </div>
+            </li>
 
 
-            <div id="tab15" class="tab">
+            <li id="tab15" class="tab">
               <dl>
                 <dt><img src="images/gateau/img/img_015.jpg" alt="ガトー(焼き菓子)" width="550" height="380" /></dt>
                 <dd class="itemname">クッキー詰合せ・かご盛りギフト</dd>
                 <dd class="description"></dd>
               </dl>
-            </div>
+            </li>
 
 
 
 
-          </div>
+          </ul>
 
           <div class="thumnail">
             <ul class="tabs">
