@@ -1,13 +1,31 @@
 @charset "utf-8";
 
 header {
-  padding: 32px 8px 0;
-  display: flex;
+  padding: 48px 8px 0;
+  min-width: 612px;
+  min-height: 80px;
+
+  .header_info {
+    margin: 0 auto;
+    display: flex;
+    max-width: 1500px;
+
+    nav a {
+
+      :hover {
+        background: #ffdd00;
+        border-radius: 8px;
+      }
+
+    }
+
+  }
+
 }
 
 main {
+  margin: 0 auto;
   padding: 0 8px;
-
 
   #slider {
     margin: 0 auto 16px;
@@ -25,7 +43,6 @@ main {
   .time,
   .instagram>a,
   .baumkuchen {
-    margin: 16px 0;
 
     img {
       max-width: 1100px;
@@ -71,8 +88,11 @@ main {
 }
 
 
+
+
 footer {
-  padding: 32px 8px 0;
+  padding: 64px 8px 32px;
+  min-width: 536px;
 
   .footer_cnt {
     display: flex;
@@ -108,8 +128,13 @@ footer {
 
 @media(width<=902px) {
 
-  footer .adress {
-    display: block !important;
+  footer {
+    padding: 48px 8px 24px;
+
+    .adress {
+      display: block !important;
+    }
+
   }
 
 }
@@ -118,6 +143,22 @@ footer {
 
   footer .footer_img {
     display: none !important;
+  }
+
+}
+
+@media(width<=636px) {
+
+  .sweets {
+    display: block !important;
+  }
+
+}
+
+@media(width<=781px) {
+
+  header {
+    padding: 24px 8px 0;
   }
 
 }

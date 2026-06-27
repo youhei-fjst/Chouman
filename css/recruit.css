@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+main {
+  padding: 0 32px;
+}
+
+.local_contents_long {
+  margin: 0 auto;
+  padding: 32px;
+  width: calc(100% - 64px);
+  background: #fff;
+  border-radius: 16px;
+  max-width: 900px;
+}
+
+.update {
+  margin: 24px auto 24px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  font-size: 14px;
+  vertical-align: middle;
+  letter-spacing: 2px;
+
+}
+
+th {
+  color: #fff;
+  background: #9a6553;
+  border: 1px solid #a47b56;
+  width: 160px;
+}
+
+td {
+  border: 1px solid #9a6553;
+  padding: 16px 10px;
+}
+
+td,
+td p {
+  text-align: left;
+  font-size: 14px;
+  color: #7d4c1f;
+  line-height: 2;
+}
+
+tbody {
+  border: 1px solid #9a6553;
+}
