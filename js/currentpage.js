@@ -1,4 +1,4 @@
-'use strict'
+`use strict`;
 
     $(function () {
       $('a img').hover(function () {
@@ -9,4 +9,3 @@
         }
       });
     });
-

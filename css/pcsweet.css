@@ -50,6 +50,7 @@ main {
 
 .local_contents03 {
   background: url(bg_contents_local03.png);
+  min-height: 1030px;
 
   p {
 
@@ -69,9 +70,16 @@ main {
   justify-content: center;
 }
 
+.thumnail {
+  width: 364px;
+}
+
+
+
 .tabs {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: left;
   gap: 16px;
   margin: 16px;
 }
@@ -93,8 +101,12 @@ main {
     display: block;
   }
 
+  .thumnail {
+    margin: 0 auto;
+  }
+
   dl {
-    margin: 80px auto 128px;
+    margin: 96px auto 160px;
   }
 
 }
