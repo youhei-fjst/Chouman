@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+.staff img {
+  max-width: 540px;
+  width: 100%;
+  height: auto;
+}
+
+.access {
+
+  dt,
+  dd {
+    font-size: 14px;
+    line-height: 2;
+  }
+
+}
+
+dl {
+  margin: 32px;
+}
+
+#gmap iframe {
+  max-width: 540px;
+  width: 100%;
+}
