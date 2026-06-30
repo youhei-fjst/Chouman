@@ -2,7 +2,7 @@
 
 header {
   padding: 24px 8px 0;
-  min-width: 612px;
+  min-width: 585px;
   min-height: 80px;
 
   .header_info {
@@ -100,19 +100,19 @@ main {
 }
 
 
-.logo img{
-  margin: 32px 0;
-}
-
 footer {
   padding: 48px 8px 24px;
-  min-width: 536px;
+  min-width: 503px;
 
   .footer_cnt {
     margin: 16px 0 8px;
     display: flex;
     justify-content: center;
     gap: 16px;
+
+    .logo {
+      margin: 32px 0;
+    }
 
     p {
       color: #fff8f3;
@@ -165,7 +165,7 @@ footer {
 
     nav {
       margin: 0 0 0 8px !important;
-      width: 400px;
+      width: 377px;
     }
 
   }
