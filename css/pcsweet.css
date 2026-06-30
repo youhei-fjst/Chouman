@@ -42,6 +42,7 @@ main {
 
 .local_contents_deco {
   background: url(bg_contents_local_deco.png);
+  min-height: 1730px;
 }
 
 .local_contents01 {

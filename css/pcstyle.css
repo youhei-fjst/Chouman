@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 header {
-  padding: 48px 8px 0;
+  padding: 24px 8px 0;
   min-width: 612px;
   min-height: 80px;
 
@@ -10,15 +10,27 @@ header {
     display: flex;
     max-width: 1500px;
 
-    nav a {
+    h1 {
+      margin: 24px 0;
+    }
 
-      :hover {
-        background: #ffdd00;
-        border-radius: 8px;
+    nav {
+      margin: 24px 0 0 8px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      align-self: start;
+
+      a {
+
+        :hover {
+          background: #ffdd00;
+          border-radius: 8px;
+        }
+
       }
 
     }
-
   }
 
 }
@@ -88,13 +100,16 @@ main {
 }
 
 
-
+.logo img{
+  margin: 32px 0;
+}
 
 footer {
-  padding: 64px 8px 32px;
+  padding: 48px 8px 24px;
   min-width: 536px;
 
   .footer_cnt {
+    margin: 16px 0 8px;
     display: flex;
     justify-content: center;
     gap: 16px;
@@ -129,10 +144,28 @@ footer {
 @media(width<=902px) {
 
   footer {
-    padding: 48px 8px 24px;
 
-    .adress {
-      display: block !important;
+    .footer_cnt {
+      margin: 0;
+      justify-content: start;
+
+      .adress {
+        display: block !important;
+      }
+
+    }
+
+  }
+
+}
+
+@media(width<=782px) {
+
+  header {
+
+    nav {
+      margin: 0 0 0 8px !important;
+      width: 400px;
     }
 
   }
@@ -151,14 +184,6 @@ footer {
 
   .sweets {
     display: block !important;
-  }
-
-}
-
-@media(width<=780px) {
-
-  header {
-    padding: 24px 8px 0;
   }
 
 }
