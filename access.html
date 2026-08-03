@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/local.css">
   <link rel="stylesheet" href="css/pcstyle.css">
+  <link rel="stylesheet" href="css/hamburger.css">
   <link rel="stylesheet" href="css/pcsweet.css">
   <link rel="stylesheet" href="css/access.css">
   <link rel="stylesheet" href="css/spstyle.css">
@@ -63,11 +64,11 @@
   gtag('config', 'G-NST06K9XBG');
 </script>
 
-<body id="local">
+<body>
   <header>
     <section class="header_info">
       <h1><img alt="静岡市駿河区高松にあるスイーツのお店、西洋菓子処シューマン" src="img/img_titlelogo.png" width="200" height="55"></h1>
-      <nav>
+      <nav class="pcnavi">
         <a href="index.html"><img src="img/gnavi01_off.png" alt="トップ"></a>
         <a href="entremets.html"><img src="img/gnavi02_off.png" alt="アントルメ"></a>
         <a href="gateau.html"><img src="img/gnavi03_off.png" alt="ガトー"></a>
@@ -75,6 +76,30 @@
         <a href="recruit.html"><img src="img/gnavi05_off.png" alt="採用情報"></a>
         <a href="access.html"><img src="img/gnavi06_off.png" alt="アクセス・店舗情報"></a>
       </nav>
+      <button class="burger" id="jsburger"></button>
+      <nav class="spnavi" id="js-nav">
+        <ul>
+          <li>
+            <a href="index.html"><img src="img/gnavi01_off.png" alt="トップ"></a>
+          </li>
+          <li>
+            <a href="entremets.html"><img src="img/gnavi02_off.png" alt="アントルメ"></a>
+          </li>
+          <li>
+            <a href="gateau.html"><img src="img/gnavi03_off.png" alt="ガトー"></a>
+          </li>
+          <li>
+            <a href="baumkuchen.html"><img src="img/gnavi04_off.png" alt="バームクーヘン"></a>
+          </li>
+          <li>
+            <a href="recruit.html"><img src="img/gnavi05_off.png" alt="採用情報"></a>
+          </li>
+          <li>
+            <a href="access.html"><img src="img/gnavi06_off.png" alt="アクセス・店舗情報"></a>
+          </li>
+        </ul>
+      </nav>
+      <script src="js/burger.js"></script>
     </section>
   </header>
 
