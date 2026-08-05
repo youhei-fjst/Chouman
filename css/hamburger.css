@@ -17,53 +17,24 @@
 
 
 
-  /* ボタンの基本スタイル */
-  .burger {
-    display: block !important;
-    position: fixed;
-    right: 0px;
-    top: 20px;
-    z-index: 100;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0);
-    background-image: url(burger.svg);
-    background-size: 24px;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0 0 0 0px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: 450ms;
-
-  }
-
-
-
-  /* ボタンがアクティブになった時（3本線から×印に変形） */
-  .burger.is-active {
-    background-image: url(close.svg);
-  }
-
-
-
-  /* ナビゲーションの初期状態（画面外に隠す） */
+  /* メニュー全体の背景設定（初期状態は非表示・透明） */
   .spnavi {
-    display: block !important;
-    margin: 0 !important;
     position: fixed;
-    /* top: 0; */
-    bottom: -128px;
-    /* 右側に完全に隠す */
+    margin: 0 !important;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 100vh;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.85);
-    transition: 0.6s ease;
-    /* スライドのアニメーション */
-    z-index: 90;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+
+    /* 初期状態 */
     opacity: 0;
+    visibility: hidden;
+    transition: 0.4s ease, visibility 0.4s ease;
 
     ul {
       height: 100%;
@@ -77,30 +48,103 @@
 
   }
 
-  .spnavi a:nth-of-type {
-    transition-delay: 100ms;
+  /* 各メニュー項目の初期状態（少し下に下げて透明にする） */
+  .nav-item {
+
+    margin: 0 auto;
+    text-align: center;
+
+    opacity: 0;
+    transform: translateY(30px);
+    /* 下から湧き出る動きの準備 */
+    transition: 0.5s ease;
   }
 
-  .spnavi a:nth-of-type(3) {
-    transition-delay: 200ms;
+  .nav-item a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
   }
 
-  .spnavi a:nth-of-type(4) {
-    transition-delay: 300ms;
-  }
+  /* -----------------------------------------
+   アクティブ状態（ボタンが押されたとき）
+----------------------------------------- */
 
-  .spnavi a:nth-of-type(5) {
-    transition-delay: 400ms;
-  }
-
-  .spnavi a:nth-of-type(6) {
-    transition-delay: 500ms;
-  }
-
-  /* メニューが開いた時 */
+  /* メニュー全体を表示 */
   .spnavi.is-active {
-    bottom: 0;
-    /* 画面内にぴったり収める */
     opacity: 1;
+    visibility: visible;
   }
+
+  /* メニュー項目を元の位置に戻してフェードイン */
+  .spnavi.is-active .nav-item {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* 【重要】順番にポップアップさせる遅延時間の設定（0.1秒ずつずらす） */
+  .spnavi.is-active .nav-item:nth-child(1) {
+    transition-delay: 0.1s;
+  }
+
+  .spnavi.is-active .nav-item:nth-child(2) {
+    transition-delay: 0.2s;
+  }
+
+  .spnavi.is-active .nav-item:nth-child(3) {
+    transition-delay: 0.3s;
+  }
+
+  .spnavi.is-active .nav-item:nth-child(4) {
+    transition-delay: 0.4s;
+  }
+
+  .spnavi.is-active .nav-item:nth-child(5) {
+    transition-delay: 0.5s;
+  }
+
+  .spnavi.is-active .nav-item:nth-child(6) {
+    transition-delay: 0.6s;
+  }
+
+  /* --- ハンバーガーボタンの簡易スタイル --- */
+  .burger {
+    display: block !important;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: 24px;
+    background-position: center;
+    margin: 0 0 0 0px;
+    border-radius: 4px;
+    transition: 450ms;
+    position: fixed;
+    top: 24px;
+    right: 0px;
+    width: 32px;
+    height: 32px;
+    background: url(burger.svg);
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+  }
+
+  .burger.is-active {
+    background-image: url(close.svg);
+  }
+
+
+
+  .burger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 7px;
+    transition: background-color 0.3s;
+  }
+
+  /* メニューが開いているときはボタンの線の色を白にする */
+  /* .burger.is-active span {
+    background-color: #fff;
+  } */
 }

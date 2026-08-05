@@ -1,22 +1,19 @@
-'use stcict'
+'use strict'
 
-document.addEventListener('DOMContentLoaded', () => {
-  const hamburger = document.querySelector('#jsburger');
-  const nav = document.querySelector('#js-nav');
+const menuBtn = document.getElementById('jsburger');
+const navMenu = document.getElementById('js-nav');
 
-  // ボタンがクリックされた時の処理
-  hamburger.addEventListener('click', () => {
-    // ボタンとメニューに「is-active」クラスを付け外しする
-    hamburger.classList.toggle('is-active');
-    nav.classList.toggle('is-active');
-  });
+menuBtn.addEventListener('click', () => {
+  // クラスの付け外し
+  menuBtn.classList.toggle('is-active');
+  navMenu.classList.toggle('is-active');
+});
 
-  // （オプション）メニュー内のリンクがクリックされたらメニューを閉じる
-  const navLinks = document.querySelectorAll('.spnavi a');
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      hamburger.classList.remove('is-active');
-      nav.classList.remove('is-active');
-    });
+/* メニューのリンクをクリックしたらメニューを閉じる設定 */
+const navLinks = document.querySelectorAll('.nav-item a');
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    menuBtn.classList.remove('is-active');
+    navMenu.classList.remove('is-active');
   });
 });
