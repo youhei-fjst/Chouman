@@ -1,43 +1,53 @@
-`use strict`;
+'use stcict'
 
-// const images = [
-//   "js/001.jpg",
-//   "js/002.jpg",
-//   "js/003.jpg",
-//   "js/004.jpg",
-//   "js/005.jpg"
-// ];
+const slidesContainer = document.querySelector('.carousel-slides');
+const slides = document.querySelectorAll('.slide');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
 
-// let index = 0;
+let currentIndex = 0;
+const totalSlides = slides.length;
+const intervalTime = 3000; // 自動再生の間隔（3秒）
+let slideInterval;
 
-// const slider = document.querySelector(`#slider`);
+// スライドを移動させる関数
+function updateSlidePosition() {
+  slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
 
-// setInterval(() => {
+// 次のスライドへ
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % totalSlides;
+  updateSlidePosition();
+}
 
-//   index++;
+// 前のスライドへ
+function prevSlide() {
+  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+  updateSlidePosition();
+}
 
-//   if(index >= images.length) {
-//     index = 0;
-//   }
+// 自動再生を開始する関数
+function startAutoSlide() {
+  slideInterval = setInterval(nextSlide, intervalTime);
+}
 
-//   slider.src = images[index];
+// 自動再生をリセット（手動操作された時にタイマーを初期化するため）
+function resetAutoSlide() {
+  clearInterval(slideInterval);
+  startAutoSlide();
+}
 
-// }, 5000);
+// イベントリスナーの登録
+nextBtn.addEventListener('click', () => {
+  nextSlide();
+  resetAutoSlide();
+});
 
-    const slides = document.querySelectorAll('.slide_box img');
-    let currentIndex = 0;
-    const intervalTime = 5000; // 画像が切り替わる間隔（4000ミリ秒 = 4秒）
+prevBtn.addEventListener('click', () => {
+  prevSlide();
+  resetAutoSlide();
+});
 
-    function nextSlide() {
-      // 現在の画像から「active」クラスを削除
-      slides[currentIndex].classList.remove('active');
-      
-      // 次の画像のインデックスを計算（最後の画像の場合は0に戻る）
-      currentIndex = (currentIndex + 1) % slides.length;
-      
-      // 次の画像に「active」クラスを追加
-      slides[currentIndex].classList.add('active');
-    }
-
-    // 指定した時間ごとにnextSlide関数を繰り返し実行
-    setInterval(nextSlide, intervalTime);
+// 初期起動
+startAutoSlide();

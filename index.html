@@ -38,24 +38,6 @@
     });
   </script>
 
-  <!-- nivoSlider -->
-
-
-  <!--<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>-->
-
 
   <script>
     $(function () {
@@ -123,15 +105,20 @@ img.emoji {
     </section>
   </header>
   <main>
-    <section class="mainslide">
-      <ul class="slide_box">
-        <li class="slide active"><img " alt=" お菓子の写真" src="js/001.jpg" width="1186" height="450" /></li>
-        <li class="slide"><img alt="お菓子の写真" src="js/002.jpg" width="1186" height="450" /></li>
-        <li class="slide"><img alt="お菓子の写真" src="js/003.jpg" width="1186" height="450" /></li>
-        <li class="slide"><img alt="お菓子の写真" src="js/004.jpg" width="1186" height="450" /></li>
-        <li class="slide"><img alt="お菓子の写真" src="js/005.jpg" width="1186" height="450" /></li>
-      </ul>
-    </section>
+  <section class="carousel-container">
+    <!-- スライド部分 -->
+    <ul class="carousel-slides">
+      <li class="slide"><img src="js/001.jpg" alt="お菓子の写真" width="1186" height="450"></li>
+      <li class="slide"><img src="js/002.jpg" alt="お菓子の写真" width="1186" height="450"></li>
+      <li class="slide"><img src="js/003.jpg" alt="お菓子の写真" width="1186" height="450"></li>
+      <li class="slide"><img src="js/004.jpg" alt="お菓子の写真" width="1186" height="450"></li>
+      <li class="slide"><img src="js/005.jpg" alt="お菓子の写真" width="1186" height="450"></li>
+    </ul>
+
+    <!-- ナビゲーションボタン -->
+    <button class="prev-btn"><img src="img/back.svg"></button>
+    <button class="next-btn"><img src="img/forward.svg"></button>
+  </section>
     <script src="js/autoslide.js"></script>
 
     <section class="wrap_contents">
