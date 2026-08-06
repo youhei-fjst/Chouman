@@ -15,8 +15,6 @@
   width: 1186px;
   height: 100%;
   transition: transform 0.5s ease-in-out; /* スライドのアニメーション速度 */
-  object-fit: cover;
-
 }
 
 .slide {
