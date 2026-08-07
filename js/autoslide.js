@@ -59,5 +59,5 @@ function resetTimer() {
   clearInterval(autoPlayTimer);
   autoPlayTimer = setInterval(() => {
     moveSlide(currentIndex + 1);
-  }, 3000);
+  }, 6000);
 }
