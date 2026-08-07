@@ -1,53 +1,63 @@
 'use stcict'
 
-const slidesContainer = document.querySelector('.carousel-slides');
-const slides = document.querySelectorAll('.slide');
-const prevBtn = document.querySelector('.prev-btn');
-const nextBtn = document.querySelector('.next-btn');
+const track = document.getElementById('track');
+const slides = Array.from(track.children);
+const nextBtn = document.getElementById('nextBtn');
+const prevBtn = document.getElementById('prevBtn');
 
-let currentIndex = 0;
-const totalSlides = slides.length;
-const intervalTime = 3000; // 自動再生の間隔（3秒）
-let slideInterval;
+// 初期状態の設定（クローンがあるためインデックス1からスタート）
+let currentIndex = 1; 
+let isTransitioning = false;
+const slideWidth = 100; // %単位で移動
+
+// 初期位置に配置
+track.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
 
 // スライドを移動させる関数
-function updateSlidePosition() {
-  slidesContainer.style.transform = `translateX(-${currentIndex * 100}%)`;
+function moveSlide(index, hasAnimation = true) {
+  if (isTransitioning && hasAnimation) return;
+  if (hasAnimation) isTransitioning = true;
+
+  track.style.transition = hasAnimation ? 'transform 0.5s ease-in-out' : 'none';
+  track.style.transform = `translateX(-${index * slideWidth}%)`;
+  currentIndex = index;
 }
 
-// 次のスライドへ
-function nextSlide() {
-  currentIndex = (currentIndex + 1) % totalSlides;
-  updateSlidePosition();
-}
+// 無限ループのための境界チェック
+track.addEventListener('transitionend', () => {
+  isTransitioning = false;
 
-// 前のスライドへ
-function prevSlide() {
-  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-  updateSlidePosition();
-}
+  // 最後のクローンに達したら、本物の最初のスライドに瞬間移動
+  if (slides[currentIndex].classList.contains('clone') && currentIndex === slides.length - 1) {
+    moveSlide(1, false);
+  }
+  // 最初のクローンに達したら、本物の最後のスライドに瞬間移動
+  if (slides[currentIndex].classList.contains('clone') && currentIndex === 0) {
+    moveSlide(slides.length - 2, false);
+  }
+});
 
-// 自動再生を開始する関数
-function startAutoSlide() {
-  slideInterval = setInterval(nextSlide, intervalTime);
-}
-
-// 自動再生をリセット（手動操作された時にタイマーを初期化するため）
-function resetAutoSlide() {
-  clearInterval(slideInterval);
-  startAutoSlide();
-}
-
-// イベントリスナーの登録
+// 手動操作：次へ
 nextBtn.addEventListener('click', () => {
-  nextSlide();
-  resetAutoSlide();
+  resetTimer();
+  moveSlide(currentIndex + 1);
 });
 
+// 手動操作：前へ
 prevBtn.addEventListener('click', () => {
-  prevSlide();
-  resetAutoSlide();
+  resetTimer();
+  moveSlide(currentIndex - 1);
 });
 
-// 初期起動
-startAutoSlide();
+// 自動ループタイマー
+let autoPlayTimer = setInterval(() => {
+  moveSlide(currentIndex + 1);
+}, 6000); // 3秒ごとに自動切り替え
+
+// 手動で動かした時に自動ループタイマーをリセットする関数
+function resetTimer() {
+  clearInterval(autoPlayTimer);
+  autoPlayTimer = setInterval(() => {
+    moveSlide(currentIndex + 1);
+  }, 3000);
+}
