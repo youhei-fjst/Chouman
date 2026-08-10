@@ -1,16 +1,20 @@
 @charset "utf-8";
 
 main {
-  padding: 0 32px;
+  padding: 0;
 }
 
 .local_contents_long {
   margin: 0 auto;
-  padding: 32px;
-  width: calc(100% - 64px);
+  padding: 32px 0;
   background: #fff;
   border-radius: 16px;
   max-width: 900px;
+}
+
+.col_access {
+width: calc(100% - 128px);
+margin: 0 auto;
 }
 
 .update {

@@ -12,7 +12,7 @@ main {
 .local_contents03,
 .local_contents_deco {
   margin: 0 auto;
-  padding: 32px 8px;
+  padding: 32px 0;
   max-width: 968px;
   background-repeat: no-repeat !important;
   background-position-x: center !important;
@@ -65,17 +65,36 @@ main {
 
 }
 
+
+
+
+.select_sweets,
+.deco,
+.ml50 {
+  width: calc(100% - 16px);
+}
+
 .select_sweets {
-  margin: 16px 0 0;
+  margin: 16px auto 0;
   display: flex;
   justify-content: center;
   align-items: start;
+
+
+
 }
 
 .thumnail {
   width: 364px;
 }
 
+.baumkuchen_bnr {
+  margin: 0 auto;
+  max-width: 895px;
+  width: calc(100% - 16px);
+  height: auto;
+
+}
 
 
 .tabs {
@@ -108,7 +127,7 @@ main {
   }
 
   dl {
-    margin: 64px auto;
+    margin: 96px auto 160px;
   }
 
 }
