@@ -1,5 +1,12 @@
 @charset "utf-8";
 
+.col_access {
+width: calc(100% - 16px);
+margin: 0 auto;
+}
+
+
+
 .staff img {
   max-width: 540px;
   width: 100%;

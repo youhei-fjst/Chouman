@@ -14,6 +14,7 @@ main {
 
 .col_access {
 width: calc(100% - 128px);
+min-width: 368px;
 margin: 0 auto;
 }
 
