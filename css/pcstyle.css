@@ -153,10 +153,16 @@ main {
   }
 
   .sweets {
-    margin: 16px 0;
+    margin: 16px 0 0;
     display: flex;
     gap: 16px;
     justify-content: center;
+
+    .sweets_entremets,
+    .sweets_gateau {
+      margin: 0 0 16px;
+    }
+
   }
 
   .info {
@@ -222,7 +228,6 @@ main {
   }
 
 }
-
 
 
 footer {
