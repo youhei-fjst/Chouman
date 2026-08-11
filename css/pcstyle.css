@@ -2,7 +2,6 @@
 
 header {
   padding: 24px 8px 0;
-  min-width: 585px;
   min-height: 80px;
 
   .header_info {
@@ -299,7 +298,6 @@ footer {
 
     nav {
       margin: 0 0 0 8px !important;
-      width: 377px;
     }
 
   }
