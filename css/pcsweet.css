@@ -16,6 +16,7 @@ main {
   max-width: 968px;
   background-repeat: no-repeat !important;
   background-position-x: center !important;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px;
 
   dt {
 
@@ -123,7 +124,7 @@ main {
   }
 
   .thumnail {
-    margin: 0 auto;
+    margin: 0 auto 64px;
   }
 
   dl {

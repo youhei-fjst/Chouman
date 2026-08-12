@@ -67,7 +67,7 @@ header {
 
 main {
   margin: 0 auto;
-  /* padding: 0 8px; */
+  padding: 8px 0 16px;
 
   #slider {
     margin: 0 auto 16px;
