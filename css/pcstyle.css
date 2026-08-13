@@ -245,7 +245,7 @@ main {
         max-width: 540px;
         width: calc(100% - 16px);
         height: 75px;
-        min-width: 540px;
+        min-width: 320px;
       }
     }
 
@@ -334,7 +334,7 @@ footer {
 
 }
 
-}
+
 
 @media(width<=912px) {
 
