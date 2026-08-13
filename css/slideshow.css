@@ -8,7 +8,8 @@
 }
 
 .carousel-track-container {
-  overflow: hidden; /* はみ出たスライドを隠す */
+  overflow: hidden;
+  /* はみ出たスライドを隠す */
   width: 100%;
   border-radius: 8px;
 }
@@ -21,9 +22,19 @@
 }
 
 .carousel-slide {
-  flex: 0 0 100%; /* 1個ずつ画面いっぱいに表示 */
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  flex: 0 0 100%;
+  /* 1個ずつ画面いっぱいに表示 */
   width: 100%;
+
+    img {
+    object-position: center center;
+  }
+
 }
+
 
 /* サンプル用の見栄え調整 */
 .item {
@@ -49,7 +60,14 @@
 
 }
 
-.carousel-btn:hover { background-color: rgba(0, 0, 0, 0.8); }
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
-.btn-prev { left: 10px; }
-.btn-next { right: 10px; }
+.btn-prev {
+  left: 10px;
+}
+
+.btn-next {
+  right: 10px;
+}
