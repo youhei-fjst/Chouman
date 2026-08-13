@@ -37,8 +37,7 @@ header {
 .schedule,
 .instagram_bnr,
 .baumkuchen,
-.index_contents01,
-.info {
+.index_contents01 {
   width: calc(100% - 16px);
   margin: 0 auto;
 }
@@ -215,16 +214,29 @@ main {
   }
 
   .info {
-    padding: 0 0 64px;
+    padding: 0;
     max-width: 1100px;
     /* min-width: 533px; */
     height: 100%;
-    aspect-ratio: 11 / 7;
+
+    h2 {
+
+      img {
+        max-width: 540px;
+        width: calc(100% - 16px);
+        min-width: 320px;
+        height: auto;
+      }
+    }
+
 
     iframe {
       max-width: 1100px;
-      width: 100%;
+      width: calc(100% - 16px);
+      min-width: 320px;
       height: 100%;
+      aspect-ratio: 11 / 7;
+      min-height: 320px;
     }
 
   }
