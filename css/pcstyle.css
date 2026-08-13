@@ -236,7 +236,7 @@ main {
       min-width: 320px;
       height: 100%;
       aspect-ratio: 11 / 7;
-      min-height: 320px;
+      min-height: 336px;
     }
 
   }
