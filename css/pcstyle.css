@@ -92,6 +92,55 @@ main {
 
   }
 
+  .payment {
+    max-width: 1000px;
+    background: #fff;
+    border: 4px solid #e70012;
+    margin: 16px auto;
+    padding: 0 0 16px;
+
+    h3 {
+      background: #e70012;
+      color: #fff;
+      padding: 16px 0;
+      font-size: 40px;
+    }
+
+    p {
+      margin: 8px 0;
+      font-size: 20px;
+
+      span {
+        font-size: 20px;
+        color: #e70012;
+      }
+
+    }
+
+    .paypay {
+      display: flex;
+      justify-content: center;
+      margin: 8px 0;
+
+      p {
+        font-size: 40px;
+
+        span {
+          font-size: 40px;
+        }
+
+      }
+
+      .index_contents01 {
+        margin: 8px 0;
+      }
+
+    }
+
+
+
+  }
+
   .time {
     max-width: 1000px;
     background: #fff;
@@ -182,59 +231,15 @@ main {
 
 }
 
-.payment {
-  max-width: 1000px;
-  background: #fff;
-  border: 4px solid #e70012;
-  margin: 16px auto;
-  padding: 0 0 16px;
 
-  h3 {
-    background: #e70012;
-    color: #fff;
-    padding: 16px 0;
-    font-size: 40px;
-  }
 
-  p {
-    margin: 8px 0;
-    font-size: 20px;
-
-    span {
-      font-size: 20px;
-      color: #e70012;
-    }
-
-  }
-
-}
-
-.paypay {
-  display: flex;
-  justify-content: center;
-  margin: 8px 0;
-
-  p {
-    font-size: 40px;
-
-    span {
-      font-size: 40px;
-    }
-
-  }
-
-  .index_contents01 {
-    margin: 8px 0;
-  }
-
-}
 
 
 footer {
   padding: 48px 8px 24px;
-  min-width: 503px;
 
   .footer_cnt {
+    min-width: 320px;
     margin: 16px 0 8px;
     display: flex;
     justify-content: center;
@@ -256,6 +261,8 @@ footer {
     .maillink {
       border: 1px solid #fafafa;
       background: #600;
+      margin: 0 auto;
+      max-width: 320px;
       padding: 4px 2px;
 
       a {
@@ -292,7 +299,7 @@ footer {
 @media(width<=912px) {
 
   .paypay {
-    display: block;
+    display: block !important;
   }
 
 }
@@ -323,6 +330,10 @@ footer {
       display: block;
     }
 
+    p {
+      letter-spacing: 0 !important;
+    }
+
   }
 
 }
@@ -339,6 +350,32 @@ footer {
 
   .sweets {
     display: block !important;
+  }
+
+}
+
+@media(width<=524px) {
+
+  footer {
+    padding: 32px 0 0 !important;
+  }
+
+  .footer_cnt {
+    margin: 0 auto !important;
+    display: block !important;
+    width: calc(100% - 16px);
+
+    .logo {
+      margin: 0 !important;
+    }
+  }
+
+}
+
+@media(width<=359px) {
+
+  h3 {
+    font-size: 36px !important;
   }
 
 }

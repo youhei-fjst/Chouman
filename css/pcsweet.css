@@ -85,7 +85,9 @@ main {
 }
 
 .thumnail {
-  width: 364px;
+  max-width: 364px;
+  width: 100%;
+  height: auto;
 }
 
 .baumkuchen_bnr {
@@ -103,6 +105,16 @@ main {
   justify-content: left;
   gap: 16px;
   margin: 0 16px;
+
+  li {
+    max-width: 100px;
+    width: calc((100% - 32px) / 3);
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 .deco {
@@ -128,6 +140,10 @@ main {
 
   dl {
     margin: 96px auto 160px;
+  }
+
+  .tabs {
+    margin: 0 auto;
   }
 
 }
