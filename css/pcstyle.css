@@ -366,7 +366,7 @@ footer {
 
 }
 
-@media(width<=524px) {
+@media(width<=534px) {
 
   footer {
     padding: 32px 0 0 !important;
