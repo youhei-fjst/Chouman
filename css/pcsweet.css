@@ -104,7 +104,7 @@ main {
   flex-wrap: wrap;
   justify-content: left;
   gap: 16px;
-  margin: 0 16px;
+  margin: 0 16px !important;
 
   li {
     max-width: 100px;
@@ -128,22 +128,3 @@ main {
 
 }
 
-@media(width<=944px) {
-
-  .select_sweets {
-    display: block;
-  }
-
-  .thumnail {
-    margin: 0 auto 64px;
-  }
-
-  dl {
-    margin: 96px auto 160px;
-  }
-
-  .tabs {
-    margin: 0 auto;
-  }
-
-}
