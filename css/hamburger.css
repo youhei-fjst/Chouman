@@ -112,11 +112,11 @@
     display: block !important;
     background-color: rgba(0, 0, 0, 0);
     background-size: 40px;
-    background-position: center;
+    background-position: center !important;
     margin: 0 0 0 0px;
     border-radius: 4px;
     transition: 0.45s;
-    position: fixed;
+    position: absolute;
     top: 24px;
     right: 8px;
     width: 48px;
@@ -131,6 +131,7 @@
 
   .burger.is-active {
     background-image: url(close.svg);
+    position: fixed;
   }
 
 
