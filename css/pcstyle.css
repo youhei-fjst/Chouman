@@ -223,6 +223,18 @@ main {
     .news {
       margin: 0 !important;
       padding: 0;
+
+      p{
+        width: 100%;
+        height: auto;
+
+        img{
+          width: 100%;
+          max-width: 400px;
+          height: auto;
+          max-height: 400px;
+        }
+      }
     }
 
   }
@@ -238,14 +250,16 @@ main {
     height: 100%;
 
     h2 {
+      margin: 0 auto;
+      max-width: 540px;
+      overflow-x: auto;
+      scrollbar-width: none;
 
       img {
-        object-fit: cover;
-        object-position: left;
-        max-width: 540px;
-        width: 100%;
+        text-align: center;
+        max-width: none;
+        display: block;
         height: 75px;
-        min-width: 320px;
       }
     }
 
@@ -306,4 +320,3 @@ footer {
     color: #fff8f3;
   }
 }
-
