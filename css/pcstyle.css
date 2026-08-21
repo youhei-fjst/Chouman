@@ -224,15 +224,15 @@ main {
       margin: 0 !important;
       padding: 0;
 
-      p{
+      p {
         width: 100%;
         height: auto;
+        overflow-x: auto;
+        scrollbar-width: none;
 
-        img{
-          width: 100%;
-          max-width: 400px;
-          height: auto;
-          max-height: 400px;
+
+        img {
+          max-width: none;
         }
       }
     }
@@ -246,7 +246,6 @@ main {
     margin: 0 auto;
     padding: 0;
     max-width: 1100px;
-    /* min-width: 533px; */
     height: 100%;
 
     h2 {
@@ -256,7 +255,6 @@ main {
       scrollbar-width: none;
 
       img {
-        text-align: center;
         max-width: none;
         display: block;
         height: 75px;
