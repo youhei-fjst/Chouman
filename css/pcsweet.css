@@ -128,3 +128,14 @@ main {
 
 }
 
+.decobtn {
+  background: none;
+  border: none;
+  max-width: 300px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+}
